@@ -1,6 +1,6 @@
 {
   "name": "rscript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Russian JavaScript Subset",
   "main": "index.js",
   "scripts": {

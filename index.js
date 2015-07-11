@@ -26,7 +26,7 @@ function invert(object) {
     }
 })();
 
-function redscript(source, direction) {
+function redscript(source) {
     var i, ii;
 
     for (i = 0, ii = iteratee.length; i < ii; i++) {

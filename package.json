@@ -1,0 +1,24 @@
+{
+  "name": "rscript",
+  "version": "0.0.1",
+  "description": "Russian JavaScript Subset",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamfrontender/redscript.git"
+  },
+  "keywords": [
+    "javascript",
+    "russian",
+    "subset"
+  ],
+  "author": "iamfrontender",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamfrontender/redscript/issues"
+  },
+  "homepage": "https://github.com/iamfrontender/redscript"
+}

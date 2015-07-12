@@ -1,6 +1,6 @@
 {
   "name": "rscript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Russian JavaScript Subset",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/iamfrontender/redscript/issues"
   },
-  "homepage": "https://github.com/iamfrontender/redscript"
+  "dependencies": {
+    "esprima": "2.4.1"
+  },
+  "homepage": "https://github.com/iamfrontender/redscript",
+  "preferGlobal": true
 }

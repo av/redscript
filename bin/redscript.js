@@ -1,20 +1,23 @@
 #!/usr/bin/env node
 
 var fs = require('fs');
+var path = require('path');
 var translator = require('your-script');
-var args = process.argv.slice(2)
+var args = process.argv.slice(2);
 var inputFile = args[0];
+
+var mainDir = path.dirname(process.mainModule.filename);
 var redscript = new translator({
-    lexemsFolder: './lexems'
+    lexemsFolder: path.join(mainDir, 'lexems')
 });
 
 var inputExt, outputExt;
 var inputType, outputType;
+var inputSource, outputSource;
 
 function setOptions(inputFile) {
     inputExt = path.extname(inputFile).substr(1);
-    inputFile = fs.readFileSync(inputFile);
-
+    
     if (inputExt === 'js') {
         inputType = 'javascript';
         outputType = 'redscript';
@@ -24,11 +27,18 @@ function setOptions(inputFile) {
         outputType = 'javascript';
         outputExt = 'js';
     }
+}
 
-    var parsedSource = redscript.parse(inputFile, {
+function parse() {
+    setOptions(inputFile);
+
+    inputSource = fs.readFileSync(inputFile);
+    outputSource = redscript.parse(inputSource, {
         sourceSubset: inputType,
         destinationSubset: outputType
     });
 
-    fs.writeFileSync(inputFile.replace(inputExt, outputExt), parsedSource);
+    fs.writeFileSync(inputFile.replace(inputExt, outputExt), outputSource);
 }
+
+parse();

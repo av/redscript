@@ -1,8 +1,7 @@
 {
   "name": "rscript",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Russian JavaScript Subset",
-  "main": ".lib/index.js",
   "bin": {
     "redscript": "bin/redscript.js"
   },
@@ -24,7 +23,7 @@
     "url": "https://github.com/iamfrontender/redscript/issues"
   },
   "dependencies": {
-    "esprima": "2.4.1"
+    "your-script": "*"
   },
   "homepage": "https://github.com/iamfrontender/redscript",
   "preferGlobal": true

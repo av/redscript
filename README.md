@@ -1,4 +1,5 @@
 # RedScript JavaScript Subset
+![Red Script](http://img42.com/CvCSa+ "RedScript")
 
 RedScript is language (actually don't) that transpiles to JavaScript.
 This code is created with the help of [your-script](https://github.com/iamfrontender/your-script) module.

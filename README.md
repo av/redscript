@@ -1,9 +1,9 @@
-# Russian JavaScript Subset
+# RedScript JavaScript Subset
 
 RedScript is language (actually don't) that transpiles to JavaScript.
 This code is created with the help of [your-script](https://github.com/iamfrontender/your-script) module.
 
-The source files in RedScript has `.rs` extension.
+The source files in RedScript have `.rs` extension.
 
 ## Disclaimer
 This module is created just for enormous incredible fun, nothing more. I can't even imagine someone really writing programms on this subset.

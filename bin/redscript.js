@@ -34,8 +34,8 @@ function parse() {
 
     inputSource = fs.readFileSync(inputFile);
     outputSource = redscript.parse(inputSource, {
-        sourceSubset: inputType,
-        destinationSubset: outputType
+        from: inputType,
+        to: outputType
     });
 
     fs.writeFileSync(inputFile.replace(inputExt, outputExt), outputSource);

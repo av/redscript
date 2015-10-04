@@ -1,6 +1,6 @@
 {
   "name": "rscript",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Russian JavaScript Subset",
   "bin": {
     "redscript": "bin/redscript.js"
